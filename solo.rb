@@ -1,3 +1,4 @@
-file_cache_path  "/opt/dirty-chef/"
-cookbook_path  "/opt/dirty-chef/cookbooks"
-data_bag_path  "/opt/dirty-chef/databags"
+root = File.absolute_path(File.dirname(__FILE__))
+file_cache_path  root
+cookbook_path    root + "/cookbooks"
+data_bag_path    root + "/databags"
